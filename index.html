@@ -1,0 +1,188 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Zeal — Grow Daily in God's Word</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      font-family: 'Poppins', 'Segoe UI', Tahoma, sans-serif;
+      color: whitesmoke;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .navbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 25px 60px;
+    }
+
+    .brand {
+      font-family: 'Great Vibes', cursive;
+      color: goldenrod;
+      font-size: 2.2rem;
+      text-shadow: 0 2px 12px rgba(218, 165, 32, 0.35);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 30px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: whitesmoke;
+      text-decoration: none;
+      font-size: 0.95rem;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    .nav-links a:hover {
+      color: goldenrod;
+    }
+
+    .hero {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 60px 24px 40px;
+    }
+
+    .hero-title {
+      font-size: 3.5rem;
+      font-weight: 700;
+      line-height: 1.15;
+      max-width: 700px;
+    }
+
+    .hero-title span {
+      color: goldenrod;
+    }
+
+    .hero-subtitle {
+      margin-top: 20px;
+      font-size: 1.2rem;
+      font-weight: 400;
+      color: rgba(245, 245, 245, 0.85);
+      max-width: 520px;
+      line-height: 1.6;
+    }
+
+    .cta-button {
+      margin-top: 40px;
+      padding: 16px 48px;
+      font-family: inherit;
+      font-size: 1.05rem;
+      font-weight: 600;
+      letter-spacing: 1px;
+      color: #0f2027;
+      background: linear-gradient(to right, goldenrod, #f0c14b);
+      border: none;
+      border-radius: 50px;
+      cursor: pointer;
+      text-decoration: none;
+      box-shadow: 0 8px 24px rgba(218, 165, 32, 0.35);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .cta-button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 32px rgba(218, 165, 32, 0.5);
+    }
+
+    .features {
+      display: flex;
+      gap: 40px;
+      margin-top: 55px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .feature {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 1rem;
+      font-weight: 500;
+    }
+
+    .check {
+      width: 26px;
+      height: 26px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: rgba(218, 165, 32, 0.15);
+      border: 1px solid goldenrod;
+      color: goldenrod;
+      font-size: 0.8rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      font-size: 0.85rem;
+      color: rgba(245, 245, 245, 0.6);
+    }
+
+    @media (max-width: 640px) {
+      .navbar {
+        padding: 20px 24px;
+      }
+      .nav-links {
+        display: none;
+      }
+      .hero-title {
+        font-size: 2.4rem;
+      }
+      .features {
+        flex-direction: column;
+        gap: 18px;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="brand">Daily Zeal</div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Features</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="hero">
+    <h1 class="hero-title">Grow Daily in <span>God's Word</span></h1>
+    <p class="hero-subtitle">Receive Scripture reminders and stay consistent in your Bible study.</p>
+    <a href="#" class="cta-button">Get Started</a>
+
+    <div class="features">
+      <div class="feature"><span class="check">&#10003;</span> Daily Scriptures</div>
+      <div class="feature"><span class="check">&#10003;</span> Email Reminders</div>
+      <div class="feature"><span class="check">&#10003;</span> Personal Dashboard</div>
+    </div>
+  <p><a href="/html/login.html">HTML tutorial</a></p>
+</body>
+</html>

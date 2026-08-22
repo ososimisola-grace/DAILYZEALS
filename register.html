@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Zeal — Create Account</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      font-family: 'Poppins', 'Segoe UI', Tahoma, sans-serif;
+      color: whitesmoke;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .brand {
+      font-family: 'Great Vibes', cursive;
+      color: goldenrod;
+      font-size: 3rem;
+      text-shadow: 0 2px 12px rgba(218, 165, 32, 0.35);
+      margin-bottom: 25px;
+    }
+
+    .register-card {
+      width: 100%;
+      max-width: 440px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(218, 165, 32, 0.3);
+      border-radius: 18px;
+      padding: 45px 40px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+    }
+
+    .register-title {
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: 700;
+    }
+
+    .register-subtitle {
+      text-align: center;
+      margin-top: 8px;
+      font-size: 0.95rem;
+      color: rgba(245, 245, 245, 0.75);
+    }
+
+    form {
+      margin-top: 30px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    label {
+      display: block;
+      font-size: 0.9rem;
+      font-weight: 500;
+      margin-bottom: 8px;
+      color: rgba(245, 245, 245, 0.9);
+    }
+
+    .input-wrapper {
+      position: relative;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 13px 16px;
+      font-family: inherit;
+      font-size: 0.95rem;
+      color: whitesmoke;
+      background: rgba(255, 255, 255, 0.07);
+      border: 1px solid rgba(245, 245, 245, 0.2);
+      border-radius: 10px;
+      outline: none;
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    input::placeholder {
+      color: rgba(245, 245, 245, 0.45);
+    }
+
+    input:focus {
+      border-color: goldenrod;
+      box-shadow: 0 0 0 3px rgba(218, 165, 32, 0.2);
+    }
+
+    .toggle-password {
+      position: absolute;
+      right: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 1.1rem;
+      color: rgba(245, 245, 245, 0.6);
+      transition: color 0.3s ease;
+    }
+
+    .toggle-password:hover {
+      color: goldenrod;
+    }
+
+    .terms {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      margin: 4px 0 24px;
+      font-size: 0.85rem;
+      color: rgba(245, 245, 245, 0.75);
+      cursor: pointer;
+    }
+
+    .terms input {
+      width: 16px;
+      height: 16px;
+      margin-top: 2px;
+      accent-color: goldenrod;
+      cursor: pointer;
+    }
+
+    .terms a {
+      color: royalblue;
+      text-decoration: none;
+    }
+
+    .terms a:hover {
+      color: goldenrod;
+    }
+
+    .register-button {
+      width: 100%;
+      padding: 14px;
+      font-family: inherit;
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: #0f2027;
+      background: linear-gradient(to right, goldenrod, #f0c14b);
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      box-shadow: 0 8px 24px rgba(218, 165, 32, 0.35);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .register-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 32px rgba(218, 165, 32, 0.5);
+    }
+
+    .login-text {
+      text-align: center;
+      margin-top: 26px;
+      font-size: 0.9rem;
+      color: rgba(245, 245, 245, 0.75);
+    }
+
+    .login-link {
+      display: inline-block;
+      margin-top: 6px;
+      color: goldenrod;
+      font-weight: 600;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .login-link:hover {
+      color: #f0c14b;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="brand">Daily Zeal</div>
+
+  <div class="register-card">
+    <h1 class="register-title">Create Your Account</h1>
+    <p class="register-subtitle">Begin your journey in God's Word</p>
+
+    <form action="#" method="post" id="registerForm">
+      <div class="form-group">
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <div class="input-wrapper">
+          <input type="password" id="password" name="password" placeholder="Create a password" minlength="6" required>
+          <button type="button" class="toggle-password" data-target="password" aria-label="Show password">&#128065;</button>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="confirmPassword">Confirm Password</label>
+        <div class="input-wrapper">
+          <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm your password" minlength="6" required>
+          <button type="button" class="toggle-password" data-target="confirmPassword" aria-label="Show password">&#128065;</button>
+        </div>
+      </div>
+
+      <label class="terms">
+        <input type="checkbox" id="agreeTerms" required>
+        <span>I agree to the <a href="#">Terms</a> and <a href="#">Privacy Policy</a></span>
+      </label>
+
+      <button type="submit" class="register-button">CREATE ACCOUNT</button>
+    </form>
+
+    <p class="login-text">Already have an account?<br><a href="daily-zeal-login.html" class="login-link">Log In</a></p>
+  </div>
+
+  <script>
+    document.querySelectorAll('.toggle-password').forEach(function (button) {
+      button.addEventListener('click', function () {
+        const input = document.getElementById(this.dataset.target);
+        const isHidden = input.type === 'password';
+        input.type = isHidden ? 'text' : 'password';
+        this.innerHTML = isHidden ? '&#128064;' : '&#128065;';
+      });
+    });
+
+    document.getElementById('registerForm').addEventListener('submit', function (e) {
+      const password = document.getElementById('password');
+      const confirmPassword = document.getElementById('confirmPassword');
+
+      if (password.value !== confirmPassword.value) {
+        e.preventDefault();
+        alert('Passwords do not match. Please try again.');
+        confirmPassword.focus();
+      }
+    });
+  </script>
+  <p> <a href= "login.html">click to login</a> </p>
+<p> <a href= "dashboard.html">click to visit your dashboard</a> </p>
+</body>
+</html>
+
+

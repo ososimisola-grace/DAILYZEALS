@@ -1,0 +1,220 @@
+ !DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Zeal — Login</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      font-family: 'Poppins', 'Segoe UI', Tahoma, sans-serif;
+      color: whitesmoke;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .brand {
+      font-family: 'Great Vibes', cursive;
+      color: goldenrod;
+      font-size: 3rem;
+      text-shadow: 0 2px 12px rgba(218, 165, 32, 0.35);
+      margin-bottom: 25px;
+    }
+
+    .login-card {
+      width: 100%;
+      max-width: 420px;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(218, 165, 32, 0.3);
+      border-radius: 18px;
+      padding: 45px 40px;
+      backdrop-filter: blur(10px);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
+    }
+
+    .login-title {
+      text-align: center;
+      font-size: 1.9rem;
+      font-weight: 700;
+    }
+
+    .login-subtitle {
+      text-align: center;
+      margin-top: 8px;
+      font-size: 0.95rem;
+      color: rgba(245, 245, 245, 0.75);
+      line-height: 1.5;
+    }
+
+    form {
+      margin-top: 30px;
+    }
+
+    .form-group {
+      margin-bottom: 22px;
+    }
+
+    label {
+      display: block;
+      font-size: 0.9rem;
+      font-weight: 500;
+      margin-bottom: 8px;
+      color: rgba(245, 245, 245, 0.9);
+    }
+
+    .input-wrapper {
+      position: relative;
+    }
+
+    input {
+      width: 100%;
+      padding: 13px 16px;
+      font-family: inherit;
+      font-size: 0.95rem;
+      color: whitesmoke;
+      background: rgba(255, 255, 255, 0.07);
+      border: 1px solid rgba(245, 245, 245, 0.2);
+      border-radius: 10px;
+      outline: none;
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    input::placeholder {
+      color: rgba(245, 245, 245, 0.45);
+    }
+
+    input:focus {
+      border-color: goldenrod;
+      box-shadow: 0 0 0 3px rgba(218, 165, 32, 0.2);
+    }
+
+    .toggle-password {
+      position: absolute;
+      right: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 1.1rem;
+      color: rgba(245, 245, 245, 0.6);
+      transition: color 0.3s ease;
+    }
+
+    .toggle-password:hover {
+      color: goldenrod;
+    }
+
+    .forgot {
+      display: block;
+      text-align: center;
+      margin: 6px 0 24px;
+      font-size: 0.85rem;
+      color: royalblue;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .forgot:hover {
+      color: goldenrod;
+    }
+
+    .login-button {
+      width: 100%;
+      padding: 14px;
+      font-family: inherit;
+      font-size: 1rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: #0f2027;
+      background: linear-gradient(to right, goldenrod, #f0c14b);
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      box-shadow: 0 8px 24px rgba(218, 165, 32, 0.35);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .login-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 32px rgba(218, 165, 32, 0.5);
+    }
+
+    .signup-text {
+      text-align: center;
+      margin-top: 26px;
+      font-size: 0.9rem;
+      color: rgba(245, 245, 245, 0.75);
+    }
+
+    .signup-link {
+      display: inline-block;
+      margin-top: 6px;
+      color: goldenrod;
+      font-weight: 600;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .signup-link:hover {
+      color: #f0c14b;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="brand">Daily Zeal</div>
+
+  <div class="login-card">
+    <h1 class="login-title">Welcome Back &#128591;</h1>
+    <p class="login-subtitle">Sign in to continue your journey<br>in God's Word</p>
+
+    <form action="#" method="post">
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <div class="input-wrapper">
+          <input type="password" id="password" name="password" placeholder="Enter your password" required>
+          <button type="button" class="toggle-password" id="togglePassword" aria-label="Show password">&#128065;</button>
+        </div>
+      </div>
+
+      <a href="#" class="forgot">Forgot Password?</a>
+
+      <button type="submit" class="login-button">LOG IN</button>
+    </form>
+
+    <p class="signup-text">Don't have an account?<br><a href="#" class="signup-link">Sign Up</a></p>
+  </div>
+
+  <script>
+    const toggle = document.getElementById('togglePassword');
+    const password = document.getElementById('password');
+
+    toggle.addEventListener('click', function () {
+      const isHidden = password.type === 'password';
+      password.type = isHidden ? 'text' : 'password';
+      this.innerHTML = isHidden ? '&#128064;' : '&#128065;';
+    });
+  </script>
+<p><a href= "register.html"> click to register </a></p>
+</body>
+</html

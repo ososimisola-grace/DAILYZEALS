@@ -1,2 +1,2 @@
 # DAILYZEALS
-Simi's idea project
+Simi's idea project for the building with ai, landmark university bootcamp
